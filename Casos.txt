@@ -1,0 +1,15 @@
+CASO 1
+
+En una escuela los niños juegan a las escondidas. Cada niño se esconde en un escondrijo que puede ser:
+
+Ropero
+Piscina
+Escritorio
+Baño
+Cuarto Vacío. 
+
+Cuando se observa el lugar se debe conocer el nombre del niño escondido.
+
+CASO 2
+
+En un local de comida rápida un grupo de personas compra hamburguesas. Una de ellas tiene un premio dentro. Se debe anunciar al ganador. Solamente una hamburguesa puede tener premio. De las personas que compran las hamburguesas cualquiera puede tomar cualquier hamburguesa y ganar el premio (considerar 5 hamburguesas)
