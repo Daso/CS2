@@ -1,0 +1,3 @@
+Una casa de apuestas requiere una aplicación que le permita a los visitantes jugar a los dados. 
+
+Se lanzan los dados. Si en el primer lanzamiento se saca 7 u 11 el jugador gana. Si se saca 2, 3 o 12 en el primer lanzamiento el jugador pierde. En todos los otros casos ese resultado se recuerda (la suma de los dos dados) y se vuelve a lanzar. Si en ese nuevo lanzamiento se saca 7 se pierde. Si coincide con lo sacado entonces gana el jugador. En todos los otros casos se mantiene el punto de recuerdo y se vuelve a lanzar.
