@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div><h1>Casino USIL</h1></div>
+        <div> <img src="images/dado<?php echo $valorDado1; ?>.png" alt="dado" /><img src="images/dado<?php echo $valorDado2 ?>.png" alt="dado" /></div>
+        <?php
+            if (!$termino){ ?>
+        <form action="" method="post">
+            <input type="submit" value="Lanzar" />    
+            <input type="hidden" id="turno" name="turno" value="1" />
+            <input type="hidden" id="punto" name="punto" value="<?php echo $punto ?>"/>
+        </form>
+        <?php } ?>
+        <p>El resultado es: <?php echo $resultado; ?></p>
+        <?php
+            if (!$termino){ ?>
+        <p>El punto que debes buscar es: <?php echo $punto; ?></p>
+        <?php } ?>
+        <p>La suma de tus dados es: <?php echo $suma; ?></p>
+        <p>volver al <a href="index.php">inicio</a></p>
+    </body>
+</html>
