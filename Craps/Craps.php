@@ -7,6 +7,7 @@ class Craps {
     private $_suma;
     private $_turno;
     private $_termino;
+    private $_resultado;
     public function __construct() {
         
         
@@ -19,13 +20,8 @@ class Craps {
              $this->_punto = $_POST['punto'];
             
         }
-        $resultado = $this->_evaluarJuego();
-        $valorDado1 = $this->_dado1->getCara();        
-        $valorDado2 = $this->_dado2->getCara();
-        $punto = $this->_punto;
-        $suma = $this->_suma;
-        $termino = $this->_termino;
-        $this->mostrarJuego($valorDado1, $valorDado2, $resultado,$punto,$suma,$termino);
+        $this->resultado = $this->_evaluarJuego();
+        $this->mostrarJuego();
         
     }
     
@@ -66,7 +62,13 @@ class Craps {
         return $resultado;
     }
     
-    private function mostrarJuego($valorDado1, $valorDado2, $resultado,$punto,$suma,$termino){
+    private function mostrarJuego(){
+        $valorDado1 = $this->_dado1->getCara();        
+        $valorDado2 = $this->_dado2->getCara();
+        $punto = $this->_punto;
+        $suma = $this->_suma;
+        $termino = $this->_termino;
+        $resultado = $this->_resultado;
         require_once 'Craps.html';
     }
 }
