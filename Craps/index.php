@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
     <head>
@@ -10,3 +11,15 @@
         ?>
     </body>
 </html>
+=======
+<?php
+    class Index{
+        public function ejecutar(){
+            require_once 'Inicio.html';
+        }
+    }
+    
+    $miIndex = new Index();
+    $miIndex->ejecutar();
+?>
+>>>>>>> 720ca69e94de3887a48013ec00a74ba66fceb8c8
