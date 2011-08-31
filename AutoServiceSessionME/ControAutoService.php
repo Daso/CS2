@@ -1,25 +1,18 @@
 <?php
-
+session_start();
 require_once 'SedanService.php';
 require_once 'CamionetaService.php';
-session_start();
 class ControAutoService {
-    private $_colAutoServices = Array();
-    private $_miSession;
+   
+    private $_miSession = Array();
     public function run()
     {
         $this->_miSession = $_SESSION['listaAutos'];
         
-        if ($_POST['registro']==null)
-        {
-            $this->mostrarFormulario();
-        }else{
+        
             $this->registrar();
             $this->mostrarResumen();
            
-                
-                
-            }
             
         }
 
@@ -65,5 +58,6 @@ class ControAutoService {
          echo '<a href="salir.php">Salir</a>';
     }
 }
-
+$control = new ControAutoService();
+$control->run();
 

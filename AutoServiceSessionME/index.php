@@ -2,14 +2,15 @@
 /*Codigo solución de la generación de Servicios para automóviles
  *
  */
+require_once 'ViewAutoservice.php';
 require_once 'ControAutoService.php';
 session_start();
 
 class index{
 
     public function run(){
-        $miControl = new ControAutoService;
-        $miControl->run();
+       $view = new ViewAutoservice;
+      
 
     }
 }
