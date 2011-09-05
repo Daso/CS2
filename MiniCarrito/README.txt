@@ -1,1 +1,0 @@
-Ejemplo básico de uso de sesiones usando un minicarito de compras

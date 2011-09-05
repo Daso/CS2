@@ -1,3 +1,0 @@
-Este es el desarrollo de un ejemplo del curso Construcci�n de Software II donde se trata de resolver este caso:
-
-En un baby shower las asistentes a la fiesta juegan a preguntar las edades de otras asistentes. Las asistentes deber�n decir sus edades con la verdad. Para ello se ven obligadas a mostrar su fecha de nacimiento de alg�n documento. Martha por ejemplo, se ve obligada a decir que tiene 29 a�os y no los 27 que dec�a tener cuando no se sab�a su fecha de nacimiento. Desarrollar el programa que permita representar el evento de personas que como dato tengan su fecha de nacimiento y puedan preguntar a otra persona su edad y esta tenga que decir su edad exacta (considerar mes y d�a).
