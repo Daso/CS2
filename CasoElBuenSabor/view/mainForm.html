@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Restaurante El Buen Sabor</title>
+<link href="../css/miestilo.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Restaurante El Buen Sabor</h1>
+<?php if($comprobante==null){ ?>
+<div id="selector">
+<form id="form1" name="form1" method="post" action="Main.php">
+  <table width="250" border="1">
+
+    <tr>
+      <td><p>
+        <label>
+          <input type="radio" name="comprobante" value="1" id="comprobante_0" />
+          Factura</label>
+        <br />
+        <label>
+          <input type="radio" name="comprobante" value="2" id="comprobante_1" />
+          Boleta</label>
+        <br />
+      </p></td>
+    </tr>
+    <tr>
+      <td><input name="button" type="submit" class="boton" id="button" value="Enviar" /></td>
+    </tr>
+  </table>
+</form>
+</div>
+<?php } ?>
+<?php if($comprobante=="2"){ ?>
+<div id="boleta">
+  <h2>Boleta</h2>
+  <form id="form2" name="form2" method="post" action="../control/ControlBoleta.php">
+    <table width="300" border="1">
+      <tr>
+        <td height="28"><label for="numeroBoleta">Numero:</label>
+            <input type="text" name="numeroBoleta" id="numeroBoleta" />
+            <input type="hidden" name="comprobante" value="2" />
+            </td>
+      </tr>
+      <tr>
+        <td><label for="montoBoleta">Monto:</label>
+            <input type="text" name="montoBoleta" id="montoBoleta" /></td>
+      </tr>
+      <tr>
+        <td><label for="button2"></label>
+            <input name="button2" type="submit" class="boton" id="button2" value="Enviar" /></td>
+      </tr>
+    </table>
+  </form>
+  </div>
+  <?php } ?>
+<?php if($comprobante=="1") { ?>
+<div id="factura">
+  <h2>Factura</h2>
+  <form id="form3" name="form3" method="post" action="../control/ControlFactura.php">
+    <table width="300" border="1">
+      <tr>
+        <td><label for="numeroFactura">Numero:</label>
+            <input type="text" name="numeroFactura" id="numeroFactura" />
+            <input type="hidden" name="comprobante" value="1" /></td>
+      </tr>
+      <tr>
+        <td><label for="montoFactura">Monto:</label>
+            <input type="text" name="montoFactura" id="montoFactura" /></td>
+      </tr>
+      <tr>
+        <td><label for="ruc">RUC:</label>
+            <input type="text" name="ruc" id="ruc" /></td>
+      </tr>
+      <tr>
+        <td><label for="button3"></label>
+            <input name="button3" type="submit" class="boton" id="button3" value="Enviar" /></td>
+      </tr>
+    </table>
+  </form>
+</div>
+<?php } ?>
+</body>
+</html>

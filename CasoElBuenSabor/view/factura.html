@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Restaurante El Buen Sabor::Factura</title>
+<link href="../css/miestilo.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Factura</h1>
+<form id="form1" name="form1" method="post" action="../view/Main.php">
+  <table width="300" border="1">
+    <tr>
+      <td>Nro. Factura</td>
+      <td><?php echo $comp->getNumeroFactura()?></td>
+    </tr>
+    <tr>
+      <td>Monto</td>
+      <td><?php echo $comp->getConsumo()?></td>
+    </tr>
+    <tr>
+      <td>Servicio</td>
+      <td><?php echo $comp->getServicio()?></td>
+    </tr>
+    <tr>
+      <td>Impuesto</td>
+      <td><?php echo $comp->getImpuesto()?></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td><?php echo $comp->getTotal()?></td>
+    </tr>
+  </table>
+  <p>
+    <input name="button" type="submit" class="boton" id="button" value="Otro Comprobante" />
+  </p>
+</form>
+</body>
+</html>
