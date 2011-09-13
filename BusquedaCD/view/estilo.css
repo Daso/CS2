@@ -1,0 +1,26 @@
+body {
+    background-color: yellowgreen;
+    font-family: verdana, arial, sans-serif;
+}
+
+h1 {
+    font-size: 120%;
+}
+table{
+    padding: 0px;
+    margin: 0px;
+}
+
+.encabezado{
+    background-color: green;
+    color:white;
+    
+}
+
+td, th {
+    font-size: 90%;
+    padding: 3px;
+    margin: 0px;
+    border: 1px black solid;
+}
+
