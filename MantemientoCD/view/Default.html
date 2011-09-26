@@ -1,0 +1,54 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Tiend de CDs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <h1>Bienvenidos a la Tienda de CDs</h1>
+<?php if($lista != null){ ?>
+      <div id="cd">
+
+          <table width="500" border="1" cellspacing="0" cellpadding="5">
+              <tr class="tablaTitulo">
+                  <th> Título </th>
+                  <th> Intérprete</th>
+                  <th> Año </th>
+                  <th> ID </th>
+                  <th>Acci&oacute;n</th>
+              </tr>
+
+              <?php foreach($lista as $row) {?>
+              <tr>
+                  <td class="tablaDato"><?php echo $row->getTitulo(); ?></td>
+                  <td class="tablaDato"><?php echo $row->getInterprete(); ?></td>
+                  <td class="tablaDato"><?php echo $row->getAnho(); ?></td>
+                  <td class="tablaDato"><?php echo $row->getID(); ?></td>
+                  <td class="tablaDato"><a href="?opcion=modificar&id=<?php echo $row->getID(); ?>">Modificar</a><br /><a href="?opcion=eliminar&id=<?php echo $row->getID(); ?>">Eliminar</a></td>
+
+              </tr>
+              <?php } ?>
+              
+          </table>
+          <p><a href="?opcion=ingresar">Ingresar Nuevo CD</a></p>
+          <p><a href="?opcion=salir">Salir</a></p>
+      </div>
+<?php } ?>
+
+<?php if($error != null) { ?>
+
+<div id="error">
+
+    <h2>Error</h2>
+    <p class="error"><?php echo $error ?></p>
+
+</div>
+<?php } ?>
+
+  </body>
+</html>
