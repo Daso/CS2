@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Formulario de búsqueda</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="estilo.css" rel="stylesheet" type="text/css" media="screen"/>
+  </head>
+  <body>
+      <h1>Búsqueda por Título</h1>
+      <div id="formalario">
+          <form method="post" action="">
+              <p><label for="titulo">Ingrese el título:</label> <input type="text" name="titulo" id="titulo"></p>
+              <input type="submit" value="Buscar">
+
+
+          </form>
+
+<?php if($encontrados != null) { ?>
+
+           <table>
+              <tr class ="encabezado"><th>ID</th><th>Título</th><th>Intérprete</th><th>Año</th></tr>
+              <?php foreach($encontrados as $cd){?>
+
+              <tr><td><?php echo $cd->getId(); ?></td>
+                  <td><?php echo $cd->getTitulo(); ?></td>
+                  <td><?php echo $cd->getInterprete(); ?></td>
+                  <td><?php echo $cd->getAnho(); ?></td>
+              </tr>
+
+              <?php } ?>
+          </table>
+
+<?php } ?>
+      </div>
+      <a href="../index.php">Volver al inicio</a>
+  </body>
+</html>
