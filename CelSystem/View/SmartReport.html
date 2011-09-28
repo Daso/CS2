@@ -15,7 +15,7 @@ and open the template in the editor.
               <th>Modelo</th><th>Chip</th><th>3G</th><th>Cámara</th>
           </tr>
           <tr>
-              <td>AAAAA</td><td>NO</td><td>NO</td><td>NO</td>
+              <td><?php echo $phone->getModel(); ?></td><td><?php echo self::_booleanToString($phone->hasChip()); ?></td><td><?php echo self::_booleanToString($phone->has3G()); ?></td><td><?php echo self::_booleanToString($phone->hasCamera()); ?></td>
           </tr>
       </table>
       <a href="../index.php">Volver</a>

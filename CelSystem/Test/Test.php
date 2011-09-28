@@ -1,16 +1,6 @@
 <?php
-require_once '/../Model/Android.php';
-require_once '/../Model/BlackBerry.php';
-require_once '/../Model/IPhone.php';
+require_once '../Factory/SmartFactory.php';
 
-$miIphone = new IPhone('I3');
-print_r($miIphone);
-print_r($miIphone->hasCamera());
-
-$miBB = new BlackBerry('if045');
-print_r($miBB);
-
-$miAndroid = new Android('NewOne');
-print_r($miAndroid);
-
+$objeto = SmartFactory::getPhone(3, 'I4');
+print_r($objeto);
 ?>
