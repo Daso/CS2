@@ -1,0 +1,58 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- httpwww.phpmyadmin.net
+--
+-- Servidor localhost
+-- Tiempo de generación 06-10-2011 a las 135740
+-- Versión del servidor 5.1.37
+-- Versión de PHP 5.3.0
+
+SET SQL_MODE=NO_AUTO_VALUE_ON_ZERO;
+
+--
+-- Base de datos `practica`
+--
+CREATE DATABASE `practica` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `practica`;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `cabezara`
+--
+
+CREATE TABLE IF NOT EXISTS `cabezara` (
+  `cabecera_id` int(11) NOT NULL,
+  `ingresoTotal` double NOT NULL,
+  `impuestoTotal` double NOT NULL,
+  PRIMARY KEY (`cabecera_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1;
+
+--
+-- Volcar la base de datos para la tabla `cabezara`
+--
+
+INSERT INTO `cabezara` (`cabecera_id`, `ingresoTotal`, `impuestoTotal`) VALUES
+(1, 0, 0),
+(2, 0, 0),
+(3, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `detalle`
+--
+
+CREATE TABLE IF NOT EXISTS `detalle` (
+  `detalle_id` int(11) NOT NULL,
+  `cabezara_id` int(11) NOT NULL,
+  `ingreso` double NOT NULL,
+  `impuesto` double NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcar la base de datos para la tabla `detalle`
+--
+
+INSERT INTO `detalle` (`detalle_id`, `cabezara_id`, `ingreso`, `impuesto`) VALUES
+(1, 1, 0, 0);

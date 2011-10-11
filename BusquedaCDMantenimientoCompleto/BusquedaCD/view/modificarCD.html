@@ -1,0 +1,23 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Tienda CD</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+      <h1>Modificaci&oacute;n de CD</h1>
+      <form method="post" action="?opcion=modificacion">
+          <p>ID: <input readonly="true" name="id" type="text" value="<?php echo $cd->getId(); ?>"></p>
+          <p>T&iacute;tulo: <input name="titulo" type="text" value="<?php echo $cd->getTitulo(); ?>"></p>
+          <p>Int&eacute;rprete: <input name="interprete" type="text"value="<?php echo $cd->getInterprete(); ?>"></p>
+          <p>A&ntilde;o: <input name="anho" type="text" value="<?php echo $cd->getAnho(); ?>"></p>
+          <input type="submit" value="Modificar">
+      </form>
+  </body>
+</html>

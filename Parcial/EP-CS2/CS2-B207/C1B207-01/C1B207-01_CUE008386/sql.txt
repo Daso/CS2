@@ -1,0 +1,48 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost
+-- Tiempo de generación: 06-10-2011 a las 13:51:09
+-- Versión del servidor: 5.1.37
+-- Versión de PHP: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Base de datos: `impuesto`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `sueldo`
+--
+
+CREATE TABLE IF NOT EXISTS `sueldo` (
+  `enero` int(20) NOT NULL,
+  `febrero` int(20) NOT NULL,
+  `marzo` int(20) NOT NULL,
+  `abril` int(20) NOT NULL,
+  `mayo` int(20) NOT NULL,
+  `junio` int(20) NOT NULL,
+  `julio` int(20) NOT NULL,
+  `agosto` int(20) NOT NULL,
+  `setiembre` int(20) NOT NULL,
+  `octubre` int(20) NOT NULL,
+  `noviembre` int(20) NOT NULL,
+  `diciembre` int(20) NOT NULL,
+  `IngresoAnual` int(20) NOT NULL,
+  `impuesto` int(20) NOT NULL,
+  `totalPagar` int(20) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Volcar la base de datos para la tabla `sueldo`
+--
+
+INSERT INTO `sueldo` (`enero`, `febrero`, `marzo`, `abril`, `mayo`, `junio`, `julio`, `agosto`, `setiembre`, `octubre`, `noviembre`, `diciembre`, `IngresoAnual`, `impuesto`, `totalPagar`) VALUES
+(200, 6767, 56, 7867, 8778, 87687, 768768, 8678, 878, 8768, 88768, 87878, 87987, 87689, 87689778),
+(56, 65, 6565, 656, 65675, 6565, 57656, 6565, 656, 6565, 6565, 5665, 7656, 656, 5656),
+(12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12),
+(12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12);
