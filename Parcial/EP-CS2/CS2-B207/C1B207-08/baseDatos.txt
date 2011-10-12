@@ -1,0 +1,31 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost
+-- Tiempo de generación: 06-10-2011 a las 13:56:12
+-- Versión del servidor: 5.1.37
+-- Versión de PHP: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Base de datos: `parcial`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `impuestos`
+--
+
+CREATE TABLE IF NOT EXISTS `impuestos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mes` varchar(15) NOT NULL,
+  `ingresos` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+
+--
+-- Volcar la base de datos para la tabla `impuestos`
+--

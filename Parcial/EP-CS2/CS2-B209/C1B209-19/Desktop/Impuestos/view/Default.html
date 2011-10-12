@@ -1,0 +1,38 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>IMPUESTOS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+      <h1>impuestos por Mes</h1>
+
+      <table border="1">
+          <tr>
+              <td><p>ID</p></td>
+              <td><p>MES</p></td>
+              <td><p>IMPUESTO</p></td>
+              <td><p>ImpMes</p></td>
+              <td><p>TOTAL</p></td>
+          </tr>
+          <?php foreach($lista as $row){ ?>
+          <tr>
+              <td><p><?php echo $row->getId; ?></p></td>
+              <td><p><?php echo $row->getMes; ?></p></td>
+              <td><p><?php echo $row->getImpuesto; ?></p></td>
+              <td><p><?php echo $row->getImpMes; ?></p></td>
+              
+          </tr>
+          <?php } ?>
+      </table>
+
+      <p>total: <?php echo $row->getTotal; ?></p>
+      <?php if($lista->getTotal > 50000){$lista->getTotal * 0.3 } ?>
+      <a href="?opcion=ingresar">Ingresar impuesto por mes</a>
+
+  </body>
+</html>

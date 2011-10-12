@@ -1,0 +1,14 @@
+La DB no existe
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+
+Query:UPDATE `impuestosanual`.`impuesto` SET `ingreso` = '', `impuesto` = '0' WHERE `impuestos`.`id` =  LIMIT 1;
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+
+Query:UPDATE `impuestosanual`.`impuesto` SET `ingreso` = '', `impuesto` = '0' WHERE `impuestos`.`id` =  LIMIT 1;
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+
+Query:UPDATE `impuestosanual`.`impuesto` SET `ingreso` = '2900', `impuesto` = '20.3' WHERE `impuestos`.`id` =  LIMIT 1;
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1
+
+Query:UPDATE `impuestosanual`.`impuesto` SET `ingreso` = '2900', `impuesto` = '20.3' WHERE `impuestos`.`id` =  LIMIT 1;

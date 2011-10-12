@@ -1,0 +1,35 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost
+-- Tiempo de generación: 06-10-2011 a las 13:52:37
+-- Versión del servidor: 5.1.37
+-- Versión de PHP: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Base de datos: `cue007846`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `sistema`
+--
+
+CREATE TABLE IF NOT EXISTS `sistema` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mes` varchar(100) NOT NULL,
+  `montoMes` decimal(10,0) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcar la base de datos para la tabla `sistema`
+--
+
+INSERT INTO `sistema` (`id`, `mes`, `montoMes`) VALUES
+(1, 'Enero', '24000'),
+(2, 'Febrero', '60000');

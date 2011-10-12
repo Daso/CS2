@@ -1,0 +1,40 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost
+-- Tiempo de generación: 06-10-2011 a las 14:00:19
+-- Versión del servidor: 5.1.37
+-- Versión de PHP: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Base de datos: `impuestos_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `ingresos`
+--
+
+CREATE TABLE IF NOT EXISTS `ingresos` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Mes` varchar(50) NOT NULL,
+  `Ingresos` decimal(10,5) NOT NULL,
+  `Impuestos` decimal(10,5) NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Volcar la base de datos para la tabla `ingresos`
+--
+
+INSERT INTO `ingresos` (`Id`, `Mes`, `Ingresos`, `Impuestos`) VALUES
+(1, 'Enero', '501.00000', '10.00000'),
+(2, 'Febrero', '4153.00000', '45.00000'),
+(3, 'Marzo', '4153.00000', '45.00000'),
+(4, 'Abril', '4153.00000', '45.00000'),
+(5, 'Mayo', '4153.00000', '45.00000'),
+(6, 'Junio', '4153.00000', '45.00000');

@@ -1,0 +1,50 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>Calculador de Impuestos - Reporte</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mes</th>
+                    <th>Impuesto del Mes</th>
+                    <th>Total a Pagar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($meses as $mes){ ?>
+                <tr>
+                    <td><?php echo $mes->getMes(); ?></td>
+                    <td><?php echo $mes->getImpuesto(); ?></td>
+                    <td><?php echo $mes->getImpuesto()*$mes->getIngreso(); ?></td>
+                </tr>
+                <?php } ?>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sueldo Acumulado del Año</th>
+                    <th>Impuestos Acumulados a Pagar (mensuales)</th>
+                    <th>Impuesto Extraordinario (30%)</th>
+                    <th>Total a Pagar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><?php echo $sueldoAcumulado; ?></td>
+                    <td><?php echo $impuestosAcumulados; ?></td>
+                    <td><?php echo $impuestoExtra; ?></td>
+                    <td><?php echo $total; ?></td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="ViewControl.php">Volver al Menú Principal</a>
+    </body>
+</html>

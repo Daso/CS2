@@ -1,0 +1,24 @@
+Error en la conexión con el servidor
+
+Base de datos no existe
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'seleeeeect * from cds' at line 1
+Query:
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'seleeeeect * from cds' at line 1
+Query:seleeeeect * from cds
+
+Base de datos no existe
+
+Error en la conexión con el servidor
+
+Base de datos no existe
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'selasasdfect * from cds' at line 1
+Query:selasasdfect * from cds
+
+Base de datos no existe
+
+Unknown column 'AAAA' in 'field list'
+Query:INSERT INTO `cdcol`.`cds` (`titel`, `interpret`, `jahr`, `id`) VALUES (AAAA, BBBB, 9999, NULL);
+
