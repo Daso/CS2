@@ -1,16 +1,19 @@
 <?php
 require_once '/../ds/SQL.php';
 require_once '/../dm/MySQL.php';
-require_once '/../model/Libro.php';
+//require_once '/../model/Libro.php';
+//require_once '/../model/Publicacion.php';
 require_once '/../persistence/Persistence.php';
 require_once '/../ds/BaseDeDatos.php';
+require_once '/../factory/ProductoEditorialFactory.php';
+
+
+$miObjetoFactory = new ProductoEditorialFactory();
+$obj = $miObjetoFactory->create(1);
+print_r($obj);
 
 
 
-
-$miLibro = new Libro();
-
-print_r($miLibro->listar());
 /*
 $consulta = new SQL();
 $consulta->addTable('libros');
