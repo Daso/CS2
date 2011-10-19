@@ -19,7 +19,7 @@ class Publicacion extends ProductoEditorial{
 
 
     public function listar(){
-        $lista = $this->_traerDatos('publicacion');
+        $lista = $this->_traerDatos('publicaciones');
         foreach($lista as $publicacion){
             $id  = $publicacion['id'];
             $numero = $publicacion['numero'];

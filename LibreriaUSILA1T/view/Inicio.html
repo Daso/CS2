@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <title>Librería USIL</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="estilo.css" rel="stylesheet" type="text/css" media="screen"/>
+  </head>
+  <body>
+    <h1>Librería USIL</h1>
+    <div id="main">
+      <table>
+        <tr>
+         <th>ID</th><th><?php echo $cabecera ?></th><th>Autor</th><th>Materia</th><th>Precio</th><th>Costo</th><th>Acción</th>
+        </tr>
+        <?php foreach($this->_listaProductoEditorial as $obj) { ?>
+        <tr>
+            <td><?php echo $obj->getId(); ?></td>
+           
+            <td><?php echo $obj->$metodo() ?></td>
+           
+            <td><?php echo $obj->getAutor(); ?></td>
+            <td><?php echo $obj->getMateria(); ?></td>
+            <td><?php echo $obj->getPrecio(); ?></td>
+            <td><?php echo $obj->getCosto(); ?></td>
+            <td><a href ="#">Comprar</a></td>
+        </tr>
+      <?php } ?>
+      
+      </table>
+      
+      
+      
+    </div>
+  </body>
+</html>

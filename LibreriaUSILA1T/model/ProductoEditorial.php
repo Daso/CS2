@@ -25,7 +25,7 @@ public function getCosto() {return $this->costo;}
 
 protected function _traerDatos($tabla){
     $sql = new SQL();
-    $sql->addTable('libros');
+    $sql->addTable($tabla);    
     $lista = Persistence::consultar($sql);
     return $lista;
 }

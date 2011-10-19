@@ -24,8 +24,5 @@ class Carrito {
     public function getProductoEditorial(){
         return $this->_colProductoEditorial;
     }
-
-
-
 }
 
