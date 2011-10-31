@@ -1,6 +1,6 @@
 <?php
 require_once '/../interface/IManejadorBaseDeDatos.php';
-require_once '/../ds/SQL.php';
+require_once 'SQL.php';
 class BaseDeDatos {
     private $_manejador;
     public function __construct(IManejadorBaseDeDatos $manejador) {
@@ -14,4 +14,3 @@ class BaseDeDatos {
         return $datos;
     }
 }
-?>

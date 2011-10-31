@@ -1,4 +1,5 @@
 <?php
+
 class SQL {
     private $_colWhere = array();
     private $_colSelect = array('*');
@@ -12,19 +13,19 @@ class SQL {
         $this->_colWhere[] = $where;
     }
 
-    private function _generar()
-    {
+    private function _generate(){
         $select = implode(',', array_unique($this->_colSelect));
         $from = implode(',', array_unique($this->_colFrom));
-        $where = implode(' AND ',array_unique($this->_colWhere));
+        $where = implode('AND', array_unique($this->_colWhere));
         if($where != null){
-            return 'SELECT '.$select.' FROM '.$from. ' WHERE '.$where;
+            return 'SELECT '.$select.' FROM '.$from.' WHERE '.$where;
         }else{
             return 'SELECT '.$select.' FROM '.$from;
         }
     }
-    public function __toString() {
-        return $this->_generar();
+
+   public function __toString() {
+        return $this->_generate();
     }
 
 }
