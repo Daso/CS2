@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/test/test.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/view/ProductoEditorialView.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/view/Inicio.html</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/view/compra.html</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/index.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/dm/MySQL.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/ds/BaseDeDatos.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/ds/SQL.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/factory/ProductoEditorialFactory.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/interface/IFactory.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/interface/IManejadorBaseDeDatos.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/interface/IproductoEditorial.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/logic/Carrito.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/logic/ProductoEditorialControl.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/model/Libro.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/model/ProductoEditorial.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/model/Publicacion.php</file>
+        <file>file:/C:/xampp/htdocs/LibreriaUSIL/persistence/Persistence.php</file>
+    </open-files>
+</project-private>

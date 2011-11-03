@@ -1,0 +1,64 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost
+-- Tiempo de generación: 10-10-2011 a las 17:09:37
+-- Versión del servidor: 5.1.37
+-- Versión de PHP: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Base de datos: `tiendausil`
+--
+CREATE DATABASE `tiendausil` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `tiendausil`;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `libros`
+--
+
+CREATE TABLE IF NOT EXISTS `libros` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(30) NOT NULL,
+  `autor` varchar(30) NOT NULL,
+  `materia` varchar(30) NOT NULL,
+  `precio` float NOT NULL,
+  `costo` float NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcar la base de datos para la tabla `libros`
+--
+
+INSERT INTO `libros` (`id`, `titulo`, `autor`, `materia`, `precio`, `costo`) VALUES
+(1, 'La Casa Verde', 'Mario Vargas Llosa', 'Novela', 10, 8),
+(2, 'La Bliblia del PHP', 'Felipe Omar Anaya', 'Informática', 185, 100);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `publicaciones`
+--
+
+CREATE TABLE IF NOT EXISTS `publicaciones` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `numero` varchar(10) NOT NULL,
+  `autor` varchar(30) NOT NULL,
+  `materia` varchar(30) NOT NULL,
+  `precio` float NOT NULL,
+  `costo` float NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcar la base de datos para la tabla `publicaciones`
+--
+
+INSERT INTO `publicaciones` (`id`, `numero`, `autor`, `materia`, `precio`, `costo`) VALUES
+(1, 'CIN-001', 'Club de Cine CINEUSIL', 'Comunicaciones', 1, 0.2),
+(2, 'DER-002', 'Los Romanos', 'Derecho', 1.5, 0.8);

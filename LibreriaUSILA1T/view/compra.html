@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Librer�a USIL</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css" media="screen"/>
+</head>
+  <body>
+<h1>Tienda de Publicaciones - Compra</h1>
+<p><a href="?opcion=cerrar">salir</a></p>
+<p>Estado: <?php echo $mensaje?></p>
+<?php
+if($lista) {?>
+<div id="publicacion">
+  <table>
+    <tr class="tablaTitulo">
+      <td>ID</td>
+      <td>Autor</td>
+      <td>Titulo</td>
+      <td>Materia</td>
+      <td>Precio</td>
+      <td>Costo</td>
+      <td>Acciones </td>
+    </tr>
+    <?php foreach($lista as $row){ ?>
+    <tr>
+    <td class="tablaDato"><?php echo $row->getId();?></td>
+      <td class="tablaDato"><?php echo$row->getAutor();?></td>
+      <td class="tablaDato"><?php echo$row->get_titulo();?></td>
+      
+      <td class="tablaDato"><?php echo$row->getMateria();?></td>
+      <td class="tablaDato"><?php echo$row->getPrecio();?></td>
+      <td class="tablaDato"><?php echo$row->getCosto();?></td>
+
+      <td class="tablaDato"><a href="?opcion=eliminar&amp;id=<?php echo $row->getId();?>">eliminar</a></td>
+    </tr>
+
+    <?php } ?>
+ <tr>
+      <td colspan="4" class="tablaDato">TOTAL</td>
+      <td class="tablaDato"><?php echo $total ?></td>
+      <td class="tablaDato">&nbsp;</td>
+    </tr>
+    <tr>
+        <td><a href="../index.php">Agregar otra Publicaci&oacute;n</a></td>
+    </tr>
+  </table>
+</div>
+<?php } ?>
+<?php if(isset($error)){if($error) {?>
+<div id="error">
+    <h2>Error</h2>
+    <p class="error"><?=$error?> </p>
+</div>
+<?php }} ?>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #009933;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #009933;
+	font-weight: bold;
+}
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #009900;
+}
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #00CC00;
+}
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006600;
+	background-color: #CFFFCA;
+}
+th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-color: #33FF99;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.button {
+        margin-top: 15px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #336600;
+	border: thin solid #33CC00;
+}
+.combo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #333333;
+	border: thin solid #808080;
+	width: 180px;
+}
+.tablaTitulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	background-color: #33CC66;
+	border: 1px solid #009900;
+}
+.tablaDato {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006633;
+	background-color: #AEE3AE;
+	border: 1px solid #408080;
+}
+.campoEditar {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #006600;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+}
+.campoMostrar {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #999999;
+	margin: 0px;
+	background-color: #D7F9C1;
+	border: 0px none #FFFFFF;
+}
+
+.error {
+	color: #CC0000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-color: #FFFF00;
+}
+
+
